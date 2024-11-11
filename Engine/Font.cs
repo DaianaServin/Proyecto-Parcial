@@ -16,7 +16,7 @@ class Font
 
     public void Load(string fileName, short size)
     {
-        pointer = Engine.LoadFont2fileName, size);
+        pointer = Engine.LoadFont2(fileName, size);
         if (pointer == IntPtr.Zero)
             Engine.ErrorFatal("Fuente inexistente: " + fileName);
     }
@@ -26,4 +26,4 @@ class Font
         return pointer;
     }
 
-}
+};
